@@ -1,0 +1,26 @@
+{
+  "name": "organic-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "parcel-plugin-static-files-copy": "^2.2.0",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "parcel index.pug",
+    "build": "parcel build index.pug --out-dir public"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

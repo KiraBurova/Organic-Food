@@ -1,0 +1,11 @@
+@import "node_modules/normalize.css/normalize";
+
+@import './vars.scss';
+@import './button.scss';
+@import './header.scss';
+
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,160 @@
+.header {
+    height: 100vh;
+    background: $main-grey-1 url('../img/header.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.top-header {
+    border-bottom: 1px solid rgba($main-white, 0.12);
+}
+
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+.top-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.top-header__logo {
+    position: absolute;
+    width: 115px;
+    height: 170px;
+    background: url('../img/logo.png') no-repeat center;
+}
+
+.top-header__navigation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+}
+
+.top-header__navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-header__navigation-item {
+    position: relative;
+    padding: 40px 0;
+    margin-right: 35px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        height: 2px;
+        background-color: $main-yellow;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &:hover:after {
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.top-header__navigation-link {
+    text-decoration: none;
+    color: $main-white;
+}
+
+.top-header__cta {
+    background: $main-white;
+    &:hover {
+        background: transparent;
+        border: 1px solid $main-white;
+        color: $main-white;
+    }
+}
+
+.header__grid {
+    display: grid;
+    grid-template-columns: 380px 500px 500px;
+    grid-template-rows: 305px 305px;
+    grid-template-areas: 
+    "sweets   food meat meat"
+    "sweets   text  fruits  fruits"
+}
+
+.header__grid-element {
+    position: relative;
+    background-size: contain;
+}
+
+.header__grid-element--text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header__grid-title {
+        color: $main-yellow;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 2.5em;
+    }
+}
+
+
+.header__grid-title {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: $main-white;
+    font-size: 1.875em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header__grid-title--bold {
+    display: block;
+    font-weight: bold;
+}
+
+.header__grid-sweets {
+    grid-area: sweets;
+    background: url('../img/header-1.jpg') no-repeat center;
+    // background-size: cover;
+}
+
+.header__grid-food {
+    grid-area: food;
+    background: url('../img/header-2.jpg') no-repeat center;
+    // background-size: cover;
+}
+
+.header__grid-meat {
+    grid-area: meat;
+    background: url('../img/header-3.jpg') no-repeat center;
+    // background-size: cover;
+}
+
+.header__grid-text {
+    grid-area: text
+}
+
+.header__grid-fruits {
+    grid-area: fruits;
+    background: url('../img/header-4.jpg') no-repeat center;
+    // background-size: cover;
+}

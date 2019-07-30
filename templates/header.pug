@@ -1,0 +1,34 @@
+header.header
+    .top-header
+        .container
+            .top-header__inner
+                a(href="/").top-header__logo
+                div.top-header__navigation-wrapper
+                    nav.top-header__navigation
+                        ul.top-header__navigation-list
+                            each val in ['Home', 'About', 'Pages', 'Gallery', 'Blog', 'Contacts']
+                                li.top-header__navigation-item
+                                    a(href=`#${val.toLowerCase()}`).top-header__navigation-link= val
+                    button.button.top-header__cta Get in touch
+
+    .header__grid
+        div.header__grid-element.header__grid-sweets
+            div.header__grid-title
+                span.header__grid-title--bold Awesome 
+                span Sweets
+        div.header__grid-element.header__grid-food
+            div.header__grid-title
+                span.header__grid-title--bold Organic 
+                span Food
+        div.header__grid-element.header__grid-meat
+            div.header__grid-title
+                span.header__grid-title--bold Tasty 
+                span Meat
+        div.header__grid-element--text.header__grid-text
+            div.header__grid-title
+                span.header__grid-title--bold Agro 
+                span Awesome Products
+        div.header__grid-element.header__grid-fruits
+            div.header__grid-title
+                span.header__grid-title--bold Juicy 
+                span Fruits

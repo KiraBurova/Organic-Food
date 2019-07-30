@@ -1,0 +1,13 @@
+.button {
+    display: block;
+    height:3.8em;
+    width: 12.5em;
+    border: none;
+    border-radius: 2.25em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-family: 'Raleway';
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
