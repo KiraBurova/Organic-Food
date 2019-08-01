@@ -2,8 +2,10 @@
 
 @import './vars.scss';
 @import './button.scss';
-@import './header.scss';
 @import './fonts.scss';
+@import './typography';
+
+@import './header.scss';
 
 html, body {
     height: 100%;
