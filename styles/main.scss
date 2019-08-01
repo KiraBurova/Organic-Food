@@ -3,9 +3,10 @@
 @import './vars.scss';
 @import './button.scss';
 @import './header.scss';
-
+@import './fonts.scss';
 
 html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+    background-color: $main-white;
 }

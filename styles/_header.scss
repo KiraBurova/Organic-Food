@@ -1,6 +1,7 @@
 .header {
     height: 100vh;
     background: $main-grey-1 url('../img/header.jpg') no-repeat center;
+    clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
     background-size: cover;
 }
 
@@ -88,13 +89,18 @@
     }
 }
 
+.header__title {
+    font-family: 'Storytella', serif;
+    font-size: 12.5em;
+    color: $main-white;
+}
+
 .header__grid {
     display: grid;
-    grid-template-columns: 380px 500px 500px;
+    // grid-template-columns: repeat(150, 10px);
     grid-template-rows: 305px 305px;
-    grid-template-areas: 
-    "sweets   food meat meat"
-    "sweets   text  fruits  fruits"
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .header__grid-element {
@@ -132,29 +138,40 @@
 }
 
 .header__grid-sweets {
+    background: url('../img/header-1.jpg') no-repeat;
+    background-size: cover;
     grid-area: sweets;
-    background: url('../img/header-1.jpg') no-repeat center;
-    // background-size: cover;
-}
-
-.header__grid-food {
+    grid-column: 1 / 50;
+    grid-row-start: 1;
+  }
+  
+  .header__grid-food {
+    
+    background: url('../img/header-2.jpg') no-repeat;
+    background-size: cover;
     grid-area: food;
-    background: url('../img/header-2.jpg') no-repeat center;
-    // background-size: cover;
-}
-
-.header__grid-meat {
-    grid-area: meat;
-    background: url('../img/header-3.jpg') no-repeat center;
-    // background-size: cover;
-}
-
-.header__grid-text {
-    grid-area: text
-}
-
-.header__grid-fruits {
+    grid-column: 50 / 100;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
+  .header__grid-meat {
+    grid-column: 100 / 150;
+    grid-row-start: 1;
+    background: url('../img/header-3.jpg') no-repeat;
+    background-size: cover;
+  }
+  
+  .header__grid-text {
+    grid-column: 50 / 80;
+    grid-row-start: 2;
+  }
+  
+  .header__grid-fruits {
+    background: url('../img/header-4.jpg') no-repeat;
+    background-size: cover;
     grid-area: fruits;
-    background: url('../img/header-4.jpg') no-repeat center;
-    // background-size: cover;
-}
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column: 80 / 150;
+  }

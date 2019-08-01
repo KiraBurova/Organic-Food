@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "parcel index.pug",
-    "build": "parcel build index.pug --out-dir public"
+    "build": "parcel build index.pug --out-dir dist"
   },
   "staticFiles": {
     "staticPath": "public",
