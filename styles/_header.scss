@@ -1,6 +1,7 @@
 .header {
-    height: 100vh;
-    background: $main-grey-1 url('../img/header.jpg') no-repeat center;
+    height: 1650px;
+    background: $main-grey-1 url('../img/header-bg.jpg') no-repeat;
+    background-position: top center;
     clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
     background-size: cover;
 }
@@ -90,14 +91,16 @@
 }
 
 .header__title {
+    max-width: 70%;
+    margin: 180px auto;
     font-family: 'Storytella', serif;
     font-size: 12.5em;
     color: $main-white;
+    font-weight: 400;
 }
 
 .header__grid {
     display: grid;
-    // grid-template-columns: repeat(150, 10px);
     grid-template-rows: 305px 305px;
     max-width: 80%;
     margin: 0 auto;

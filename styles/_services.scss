@@ -1,0 +1,61 @@
+.services {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.services__banner-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 160px 0;
+}
+
+.services__banner {
+    display: inline-block;
+    position: relative;
+    background: url('../img/services-bg.jpg') no-repeat;
+    background-size: cover;
+    width: 720px;
+    height: 490px;
+}
+
+.services__banner-moved {
+    position: absolute;
+    right: -35px;
+    top: -35px;
+    background: url('../img/services-shape.jpg') no-repeat;
+    background-size: cover;
+    width: 329px;
+    height: 492px;
+}
+
+.services__banner-text {
+    display: inline-block;
+    position: absolute;
+    right: 140px;
+    top: 180px;
+    font-size: 5.25rem;
+    font-family: 'Storytella', serif;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.services__banner-text--yellow {
+    color: $main-yellow;
+}
+
+.services__banner-text--pink {
+    color: $main-pink;
+}
+
+.services__banner-text--green {
+    color: $main-green;
+}
+
+.services__banner-text--orange {
+    color: $main-orange;
+}
+
+.services__banner-text--blue {
+    color: $main-blue;
+}

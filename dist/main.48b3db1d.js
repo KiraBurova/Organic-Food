@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\Storytella.woff":[["Storytella.d787dbd6.woff","fonts/Storytella.woff"],"fonts/Storytella.woff"],"./..\\fonts\\Storytella.woff2":[["Storytella.0362bbd4.woff2","fonts/Storytella.woff2"],"fonts/Storytella.woff2"],"./..\\img\\header.jpg":[["header.7aab4a63.jpg","img/header.jpg"],"img/header.jpg"],"./..\\img\\logo.png":[["logo.cecc779a.png","img/logo.png"],"img/logo.png"],"./..\\img\\header-1.jpg":[["header-1.9cd48b04.jpg","img/header-1.jpg"],"img/header-1.jpg"],"./..\\img\\header-2.jpg":[["header-2.7a5e2a5f.jpg","img/header-2.jpg"],"img/header-2.jpg"],"./..\\img\\header-3.jpg":[["header-3.98564042.jpg","img/header-3.jpg"],"img/header-3.jpg"],"./..\\img\\header-4.jpg":[["header-4.12032930.jpg","img/header-4.jpg"],"img/header-4.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\Storytella.woff":[["Storytella.d787dbd6.woff","fonts/Storytella.woff"],"fonts/Storytella.woff"],"./..\\fonts\\Storytella.woff2":[["Storytella.0362bbd4.woff2","fonts/Storytella.woff2"],"fonts/Storytella.woff2"],"./..\\img\\header-bg.jpg":[["header-bg.238d3e41.jpg","img/header-bg.jpg"],"img/header-bg.jpg"],"./..\\img\\logo.png":[["logo.cecc779a.png","img/logo.png"],"img/logo.png"],"./..\\img\\header-1.jpg":[["header-1.9cd48b04.jpg","img/header-1.jpg"],"img/header-1.jpg"],"./..\\img\\header-2.jpg":[["header-2.7a5e2a5f.jpg","img/header-2.jpg"],"img/header-2.jpg"],"./..\\img\\header-3.jpg":[["header-3.98564042.jpg","img/header-3.jpg"],"img/header-3.jpg"],"./..\\img\\header-4.jpg":[["header-4.12032930.jpg","img/header-4.jpg"],"img/header-4.jpg"],"./..\\img\\services-bg.jpg":[["services-bg.1471617d.jpg","img/services-bg.jpg"],"img/services-bg.jpg"],"./..\\img\\services-shape.jpg":[["services-shape.7afca5df.jpg","img/services-shape.jpg"],"img/services-shape.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52604" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51461" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
