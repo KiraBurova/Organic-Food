@@ -12,3 +12,7 @@ section.services
         span.services__title-bold.title--bold Agro Food 
         | Services
     p.services__subtitle.subtitle Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc
+    ul.services__offers
+        each val, index in ['steak house', 'tasty cereals' , 'italian pizza', 'vegeterian burgers', 'awesome cupcake', 'vegetables']
+            li.services__offers-item(class="services__offers-item-"+index )
+                span.services__offers-item-text= val
