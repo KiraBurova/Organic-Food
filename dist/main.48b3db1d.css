@@ -493,7 +493,7 @@ template {
 
 .services {
   max-width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto 160px auto; }
 
 .services__banner-wrapper {
   position: relative;
