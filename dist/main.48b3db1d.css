@@ -332,6 +332,7 @@ template {
   font-weight: bold; }
 
 .subtitle {
+  max-width: 50%;
   font-size: 1.125rem;
   color: #b3b3b3;
   font-family: 'Open Sans', sans-serif;
